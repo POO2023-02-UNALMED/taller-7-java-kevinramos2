@@ -14,14 +14,9 @@ public class Periodico extends Escrito {
 	}
 	
 	//metodos abstractos
-	public int palabrasTotales(int palabrasPagina) {
-		return 0; //momentaneo
-	}
+
 	public String interpretacion() {
 		return this.interpretacion;
-	}
-	public String toString() {
-		return null; //momentaneo
 	}
 	
 	//metodos get y set
@@ -42,5 +37,12 @@ public class Periodico extends Escrito {
 	}
 	
 	//metodos de la clase
-
+	public int palabrasTotales(int palabrasPagina) {
+		return this.getPaginas()*10; 
+	}
+	public String toString() {
+		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+
+				this.getAutor()+"\n"+this.getPaginas()+"\n"+
+				this.getFecha()+"\n"+this.getPrimicia();
+	}
 }

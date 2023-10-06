@@ -13,15 +13,11 @@ public class Fabula extends Escrito {
 	
 	//metodos abstractos
 	public int palabrasTotales(int palabrasPagina) {
-		return 0; //momentaneo
+		return this.getPaginas()*1; 
 	}
 	public String interpretacion() {
 		return this.interpretacion;
 	}
-	public String toString() {
-		return null; //momentaneo
-	}
-
 	//metodos get y set
 	public String getEnsenanza() {
 		return this.ensenanza;
@@ -34,4 +30,9 @@ public class Fabula extends Escrito {
 	}
 	
 	//metodos de la clase
+	public String toString() {
+		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+
+				this.getAutor()+"\n"+this.getPaginas()+"\n"+
+				this.getEnsenanza();
+	}
 }

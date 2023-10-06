@@ -17,14 +17,12 @@ public class Libro extends Escrito {
 	
 	//Metodos abstractos
 	public int palabrasTotales(int palabrasPagina) {
-		return 0; //momentaneo
+		return this.getPaginas()*2; 
 	}
 	public String interpretacion() {
 		return this.interpretacion;
 	}
-	public String toString() {
-		return null; //momentaneo
-	}
+
 	
 	//metodos set y get
 	public String getCo_autor() {
@@ -39,9 +37,6 @@ public class Libro extends Escrito {
 	public void setEditorial(String editorial) {
 		this.editorial = editorial;
 	}
-	public void setInterpretacion(String interpretacion) {
-		this.interpretacion = interpretacion;
-	}
 	public String getEdicion() {
 		return this.edicion;
 	}
@@ -50,4 +45,13 @@ public class Libro extends Escrito {
 	}
 	
 	//metodos de la clase
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	public String toString() {
+		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+
+				this.getAutor()+"\n"+this.getPaginas()+"\n"+
+				this.getCo_autor()+"\n"+this.getEditorial()+"\n"+
+				this.getEdicion();
+	}
 }

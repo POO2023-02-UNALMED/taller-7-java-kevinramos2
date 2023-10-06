@@ -17,14 +17,8 @@ public class Tesis extends Escrito{
 	}
 	
 	//metodos abstractos
-		public int palabrasTotales(int palabrasPagina) {
-			return 0; //momentaneo
-		}
 		public String interpretacion() {
 			return this.interpretacion;
-		}
-		public String toString() {
-			return null; //momentaneo
 		}
 		
 	//metodos get y set
@@ -57,6 +51,13 @@ public class Tesis extends Escrito{
 		}
 		
 	//metodos de la clase
-
-
+		public int palabrasTotales(int palabrasPagina) {
+			return this.getPaginas()*5; 
+		}
+		public String toString() {
+			return this.getOrigen()+"\n"+this.getTitulo()+"\n"+
+					this.getAutor()+"\n"+this.getPaginas()+"\n"+
+					this.getIdea()+"\n"+this.getArgumentos()+"\n"+
+					this.getConclusion()+"\n"+this.getReferencias();
+		}
 }

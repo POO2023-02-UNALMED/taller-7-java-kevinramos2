@@ -12,14 +12,8 @@ public class Alfabeto extends Pictograma {
 	}
 	
 	//Metodos abstractos
-	
 	public String interpretacion() {
 		return this.interpretacion;
-	}
-	
-	public String toString() {
-		
-		return null; //por el momento
 	}
 	
 	//metodos get y set
@@ -29,11 +23,15 @@ public class Alfabeto extends Pictograma {
 	public void setLetras(String[] letras) {
 		this.letras = letras;
 	}
-
+	
+	//metodos de la clase
 	public void setInterpretacion(String interpretacion) {
 		this.interpretacion = interpretacion;
 	}
-	
-	//metodos de la clase
-
+	public int cantidadLetras() {
+		return letras.length;
+	}
+	public String toString() {
+		return "A, B, C, D, E, F, G, H, I, J, K, L, M, N, Ñ, O, P, Q, R, S, T, U, V, W, X, Y, Z";
+	}
 }
