@@ -17,7 +17,8 @@ public class Libro extends Escrito {
 	
 	//Metodos abstractos
 	public int palabrasTotales(int palabrasPagina) {
-		return this.getPaginas()*2; 
+		palabrasPagina = 2;
+		return this.getPaginas()*palabrasPagina; 
 	}
 	public String interpretacion() {
 		return this.interpretacion;
@@ -45,9 +46,7 @@ public class Libro extends Escrito {
 	}
 	
 	//metodos de la clase
-	public void setInterpretacion(String interpretacion) {
-		this.interpretacion = interpretacion;
-	}
+
 	public String toString() {
 		return this.getOrigen()+"\n"+this.getTitulo()+"\n"+
 				this.getAutor()+"\n"+this.getPaginas()+"\n"+
