@@ -13,7 +13,7 @@ public class Fabula extends Escrito {
 	
 	//metodos abstractos
 	public int palabrasTotales(int palabrasPagina) {
-		return this.getPaginas()*1; 
+		return this.getPaginas()*palabrasPagina*1; 
 	}
 	public String interpretacion() {
 		return this.interpretacion;
