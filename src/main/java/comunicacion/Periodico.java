@@ -24,6 +24,23 @@ public class Periodico extends Escrito {
 		return null; //momentaneo
 	}
 	
+	//metodos get y set
+	public String getFecha() {
+		return this.fecha;
+	}
+	public void setFecha(String fecha) {
+		this.fecha = fecha;
+	}
+	public String getPrimicia() {
+		return this.primicia;
+	}
+	public void setPrimicia(String primicia) {
+		this.primicia = primicia;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	
 	//metodos de la clase
 
 }

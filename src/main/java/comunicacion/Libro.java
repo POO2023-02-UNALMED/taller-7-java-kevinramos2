@@ -26,5 +26,28 @@ public class Libro extends Escrito {
 		return null; //momentaneo
 	}
 	
+	//metodos set y get
+	public String getCo_autor() {
+		return this.co_autor;
+	}
+	public void setCo_autor(String co_autor) {
+		this.co_autor = co_autor;
+	}
+	public String getEditorial() {
+		return this.editorial;
+	}
+	public void setEditorial(String editorial) {
+		this.editorial = editorial;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	public String getEdicion() {
+		return this.edicion;
+	}
+	public void setEdicion(String edicion) {
+		this.edicion = edicion;
+	}
+	
 	//metodos de la clase
 }

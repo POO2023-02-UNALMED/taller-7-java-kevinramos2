@@ -22,5 +22,16 @@ public class Fabula extends Escrito {
 		return null; //momentaneo
 	}
 
+	//metodos get y set
+	public String getEnsenanza() {
+		return this.ensenanza;
+	}
+	public void setEnsenanza(String ensenanza) {
+		this.ensenanza = ensenanza;
+	}
+	public void setInterpretacion(String interpretacion) {
+		this.interpretacion = interpretacion;
+	}
+	
 	//metodos de la clase
 }
